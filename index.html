@@ -7,6 +7,17 @@
     <title>JavaScript</title>
 </head>
 <body>
+    <h1>JavaScript</h1>
+    <script>
+        console.log("Hello, world!");
+        document.body.innerHTML = "<u>Olá mundo!</u> <br>"
+        const a = 10;
+        const b = 20;
+        const c = a + b;
+        document.body.innerHTML += "<u> A soma de a e b é: </u>" + (a + b) + "<br>"; // imrpime na pagina
+        document.body.innerHTML += "<u> A soma de a e b é: </u>" + (c) + "<br>"; // imprime na pagina
+        document.body.innerHTML += `<u> A soma de a (${a}) e b (${b}) é ${c}! </u> <br>`; // imprime na pagina
+    </script>
     
 </body>
 </html>
