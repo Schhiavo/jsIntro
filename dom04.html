@@ -7,36 +7,19 @@
     <title>DOM01</title>
 </head>
 <body>
-    <h1>Me mude com JS</h1>
-    <div>A: <span>3</span></div>
-    <div>B: <span>2</span></div>
-    <div>A+B: <span>?</span></div>
+    <h1>DOM04</h1>
+  <ul></ul>
     <script>
 console.log("Hellow");
+const eUl = document.querySelector("ul");
 
-//----------------------------------------------------------------------------------------
-// busca uma referencia para todos os elementos
-const eSpans = document.querySelectorAll("span");
-const eA = eSpans[0]; // PUXA O SPAN USANDO O INDICE DELE (PRIMEIRO, SEGUNDO ETC...)
-const eB = eSpans[1];
-const eS = eSpans[2];
-//----------------------------------------------------------------------------------------
 
-//-------------------------------------------------
-//const A = eA.textContent; //CONCATENA OS TEXTOS
-//const B = eB.textContent; 
-//const S = A+B;
-//-------------------------------------------------
+for (let i = 0; i < 5; i++) {
+    const numero = 7+1;
+    eUl.innerHTML += `<li>${numero}</li>`;
+    
+}
 
-//---------------------------------
-//OPERA OS DADOS (OUTRA FORMA)
-const A = Number(eA.textContent);
-const B = Number(eB.textContent);
-const S = A+B;
-//---------------------------------
-
-//Escreve na saida
-eS.textContent = S;
     </script>
 
 </body>
