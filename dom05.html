@@ -15,8 +15,10 @@ const eUl = document.querySelector("ul");
 
 
 for (let i = 0; i < 5; i++) {
-    const numero = 7+1;
-    eUl.textContent += `<li>$(numero)</li>`;
+    const numero = 7+i;
+    const eLi = document.createElement("li");
+    eLi.textContent = numero;
+    eUl.appendChild(eLi);
     
 }
 
