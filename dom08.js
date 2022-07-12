@@ -17,22 +17,16 @@ eValor.textContent = novoNumero;
 
 function ehParListerner(event){
     console.log("É par!");
-    criaElemento(true);
+    criaElemento(eParList);
 }
 function ehImparListerner(event){
     console.log("É impar!");
-    criaElemento(false);
+    criaElemento(eImparList);
 }
 
-function criaElemento(ehPar){
+function criaElemento(lista){
     const eLi = document.createElement("Li");
     eLi.textContent = eValor.textContent;
-
-    if(ehPar === true){
-        eParList.appendChild(eLi);
-    }
-    else{
-        eImparList.appendChild(eLi);
-    }
+        lista.appendChild(eLi);
     sorteiaValor();
 }
