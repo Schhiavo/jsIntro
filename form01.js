@@ -17,7 +17,8 @@ function submitListener(event){
     estado.cor = document.exm01.cor.value;
     estado.altura = Number(document.exm01.altura.value);
     estado.largura = Number(document.exm01.largura.value);
-criaElemento(estado.cor, estado.altura, estado.largura);
+
+    criaElemento(estado.cor, estado.altura, estado.largura);
    
 
 document.exm01.reset();
