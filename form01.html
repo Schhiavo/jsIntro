@@ -11,14 +11,14 @@
     <h1>Form 01</h1>
     <form id="form1" name="exm01">
       <!--O "action" envia os dados pro servidor designado, o method é como ele empacota os dados, o id define a identidade dele no "dom", name é o nome do formulário-->
-      <div><label for="cor">Cor</label> <input id="cor" name="cor" placeholder="Digite uma cor" /></div>
+      <div><label for="cor">Cor</label> <input type="color" id="cor" name="cor" placeholder="Digite uma cor" value="#000000" /></div>
       <div>
-        <label for="altura">Altura</label><input id="altura" name="altura" placeholder="Digite uma altura" />
+        <label for="altura">Altura</label><input type="number" id="altura" name="altura" placeholder="Digite uma altura" />
     
       </div>
       <div>
         <label for="largura">Largura</label>
-        <input id="largura" name="largura" placeholder="Digite uma largura" />
+        <input type="number" id="largura" name="largura" placeholder="Digite uma largura" />
       </div>
       <input type="submit" />
     </form>
